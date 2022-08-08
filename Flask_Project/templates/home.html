@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content  %}
+<fieldset>
+<br>
+<form style="width:30%;border:5px solid white;padding:50px" method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Full Name</label>
+      <input type="text" name="ename" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Contact No</label>
+        <input type="number" name="econtact" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact No">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" name="eemail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Salary</label>
+        <input type="text" name="esalary" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Salary">
+      </div>
+    
+    <button type="submit" class="btn btn-warning">Save</button>
+  </form>
+</fieldset>
+{% endblock %}
